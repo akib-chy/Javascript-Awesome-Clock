@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Clock</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 5rem;
+        text-transform: uppercase;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .clock {
+        font-weight: bold;
+        font-size: 10rem;
+        background: black;
+        padding: 50px;
+        border-radius: 20px;
+      }
+      .hour,
+      .second,
+      .minute,
+      .ampm,
+      .icon {
+        color: #fff;
+      }
+      .ampm {
+        padding-left: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px 0;
+      }
+      footer a {
+        text-decoration: none;
+        font-weight: bold;
+        color: red;
+      }
+      @media only screen and (max-width: 992px) {
+        .clock {
+          font-weight: bold;
+          font-size: 7rem;
+          background: black;
+          padding: 30px 20;
+          border-radius: 20px;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      @media only screen and (max-width: 668px) {
+        .clock {
+          font-weight: bold;
+          font-size: 4rem;
+          background: black;
+          padding: 20px;
+          border-radius: 20px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      @media only screen and (max-width: 448px) {
+        .clock {
+          font-weight: bold;
+          font-size: 3rem;
+          background: black;
+          padding: 15px;
+          border-radius: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Clock</h1>
+    <div div class="clock flex">
+      <div class="hour">Hour</div>
+      <div class="icon">:</div>
+      <div class="minute">Minute</div>
+      <div class="icon">:</div>
+      <div class="second">Second</div>
+      <div class="ampm">AMPM</div>
+    </div>
+    <footer>
+      <span
+        ><span>&copy;</span> 2022 Designed By:
+        <a target="_blank" href="https://web.facebook.com/Minhajul69"
+          >AKIB</a
+        ></span
+      >
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
